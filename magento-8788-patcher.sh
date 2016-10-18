@@ -307,7 +307,7 @@ function apply_8788 {
 
     cp "${PatchDir}8788/${PATCH}" ${PATCH}
 
-    APPLIED=$(bash ${PATCH} --list | grep 'SUPEE-3941');
+    APPLIED=$(bash ${PATCH} --list | grep 'SUPEE-8788');
 
     if [ "$APPLIED" = "" ] ; then
         echo '8788 Does not appear to be applied'
